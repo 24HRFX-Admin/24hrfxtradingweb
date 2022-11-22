@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "name" : "Mamba",
+        "amount": "$500.00"
+    },
+    {
+        "id" : 2,
+        "name" : "Omni_2.0",
+        "amount": "$170.04"
+    },
+    {
+        "id" : 3,
+        "name" : "Sue_San",
+        "amount": "$250.80"
+    },
+    {
+        "id" : 4,
+        "name" : "Debora_20",
+        "amount": "$650.22"
+    },
+    {
+        "id" : 5,
+        "name" : "Pac.man",
+        "amount": "$600.76"
+    },
+    {
+        "id" : 6,
+        "name" : "Satoshi",
+        "amount": "$250.49"
+    }
+]
