@@ -3,6 +3,8 @@ const mysql = require ('mysql');
 //const jwt = require ('jsonwebtoken');
 const bcrypt = require ('bcryptjs');
 
+
+
 const db = mysql.createConnection ({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER, 
@@ -202,7 +204,7 @@ exports.userB = async (req, res) => {
         if (error) {
             console.log (error);
         }
-        if (!nameB|| !nameB) {
+        if (!nameB|| !amountB) {
             return res.status(400).render("history", {
                 message: 'Fill in the required fields !'
             });
