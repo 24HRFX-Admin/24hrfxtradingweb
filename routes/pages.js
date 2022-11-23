@@ -13,7 +13,14 @@ const db = mysql.createConnection ({
 const router = express.Router();
 
 router.get ('/', (req, res) => {
+    res.render ('index')
+})
+
+
 /*
+
+router.get ('/', (req, res) => {
+
     db.query ('SELECT * FROM deposits ORDER BY Id ASC', (error, results) => {
                         
         if (error) {
@@ -23,7 +30,7 @@ router.get ('/', (req, res) => {
             return res.render ('index', {results})
         }
     })
-*/
+
 
     db.query ('SELECT * FROM withdrawals ORDER BY Id ASC', (error, data) => {
                         
@@ -37,6 +44,7 @@ router.get ('/', (req, res) => {
   
     //res.render ('index')
 })
+*/
 
 router.get ('/register', (req, res) => {
     res.render ('register')
