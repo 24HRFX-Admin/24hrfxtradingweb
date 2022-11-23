@@ -48,7 +48,7 @@ db.connect( (error)=> {
 app.use ('/', require('./routes/pages'));
 app.use ('/auth', require('./routes/auth'));
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.listen (port, ()=> {
     console.log ('server started on port 8000')
